@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    @apply m-0 p-0 box-border;
+}
+h1{
+    
+    @apply text-2xl font-bold md:font-semibold lg:font-bold font-breeserif;
+}
+.home,.about, .service, .explore, .skills, .project, .contact ,.education{
+   @apply border border-solid border-gray-500 p-8  md:mx-16  my-32 md:my-20 rounded-xl bg-grey shadow-md;
+}
+
+.home, .about, .service, .explore, .skills, .plus, .domain > p {
+    @apply text-base md:text-lg lg:text-xl font-light p-6 text-cyan-400 tracking-wide leading-loose;
+
+}
+.about>p,.skills>p{
+    @apply p-6;
+
+}
+.tech-list> i{
+    @apply text-mild-teal bg-slate-100;
+}
+.about > h1,
+.service > h1,
+.explore > h1,
+.skills > h1,
+.project > h1,
+.contact > h1{
+    @apply text-mild-teal font-breeserif text-center text-2xl md:text-4xl;
+}
+
+/*HOME SECTIONS*/
+
+.home{
+    @apply flex flex-col justify-evenly items-center py-2;
+}
+#home >  h1{
+    @apply text-4xl md:text-5xl font-bold mb-4 text-cyan-200 text-center ;
+}
+
+#downloadButton {
+    @apply flex items-center bg-mild-teal text-white text-lg md:text-xl  hover:bg-teal-500 py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out;
+}
+
+.image {
+    @apply w-full h-1/2 md:w-2/5 max-w-sm rounded-lg object-cover mb-6 md:mb-0;
+}
+
+.description {
+    @apply flex flex-col items-center md:items-start text-center md:text-left;
+}
+/*ABOUT SECTION*/
+.about-list > li > i {
+    @apply text-mild-teal; 
+}
+.left {
+    @apply flex flex-col md:flex-row; 
+}
+
+
+
+/*EDUCATION SECTION*/
+
+
+#education > h2{
+    @apply text-xl md:text-2xl font-bold mb-4 text-mild-sandalone text-center ;
+}
+#education > p {
+    @apply text-base md:text-lg lg:text-xl font-light px-4 py-2 my-24 text-cyan-400 tracking-wide leading-loose;
+}
+#education{
+    @apply border border-solid border-gray-500  rounded-xl bg-grey shadow-md;
+}
+/*SKILLS SECTION*/
+
+.progress {
+    @apply w-full h-2 bg-gray-300 rounded-lg;
+}
+
+@media (min-width: 768px) {
+    .skills-section p {
+        @apply text-lg;
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills-section p {
+        @apply text-xl;
+    }
+}
+/*EXPLORE SECTION*/
+.servcol {
+    @apply border border-solid border-grey bg-grey w-full rounded-xl;
+}
+
+/* Workshop Section Styling */
+.workshop {
+    @apply flex flex-col md:flex-row flex-wrap gap-8  bg-grey;
+}
+
+.plusw {
+    @apply flex flex-col  items-center gap-4 ml-6 p-8 border border-solid border-mild-teal rounded-lg shadow-lg shadow-mild-teal;
+}
+.plusw img {
+    @apply w-full max-w-xs rounded-lg;
+}
+.plusw h2 {
+    @apply card-title text-lg font-medium text-mild-sandalone text-center;
+}
+.workshop h1, .certificate h1 {
+    @apply pt-36 font-semibold text-2xl leading-loose text-center text-teal-700;
+    width: 100%; /* Ensure the heading spans the full width */
+    margin: 0 auto; /* Center the heading */
+    font-size: 32px;
+}
+
+/* Certificate Section Styling */
+.certificate {
+    @apply flex flex-wrap gap-8  bg-grey;
+}
+
+.certificate .card {
+    @apply glass bg-base-100 w-96 ml-8 shadow-xl border-2 border-solid border-mild-teal bg-gray-800 rounded-lg;
+}
+.certificate img {
+    @apply w-full max-w-xs rounded-lg pt-6;
+}
+.certificate h2 {
+    @apply card-title text-2xl font-medium text-mild-sandalone  text-center;
+}
+
+
+/*PROJECT SECTION*/
+.projectdiv{
+    @apply flex flex-col gap-12 md:flex-row flex-wrap p-8 my-24   bg-grey;
+}
+.project {
+    @apply flex flex-col flex-wrap md:flex-row gap-8 p-8 my-24 bg-black;
+}
+
+.domain{
+@apply my-20;
+}
+/*CONTACT SECTION*/
+.contact{
+    @apply border border-solid border-grey p-8 my-28 rounded-xl bg-black;
+
+}
+.contact-address{
+    @apply  w-1/2  h-full  border-gray-300 md:text-sm; 
+}
+.contact-spilt {
+    @apply flex flex-col gap-8 md:flex-row gap-16 text-stone-100 p-8 my-24;
+}
+.contact-form{
+    @apply w-1/2  h-full flex flex-col border-l-2 pl-10 border-mild-teal;
+}
+.contact-form > label{
+    @apply p-3 font-normal;
+}
+.contact-form > input{
+    @apply w-full p-3 text-base bg-neutral-700 rounded md:text-lg lg:text-xl font-medium text-cyan-300 tracking-wide caret-cyan-700;
+    
+}
+.contact-form > textarea{
+    @apply w-full p-3 text-base bg-neutral-700 rounded md:text-lg lg:text-xl font-medium text-cyan-300 tracking-wide;
+}
+.contact-form > button{
+    @apply rounded bg-neutral-700 w-24 p-3 m-3 ;
+}
+.contact-address > p{
+    @apply tracking-wide leading-relaxed m-3 font-sans text-base font-light md:text-base font-light lg:text-lg font-normal;
+}
+.contact-form > label{
+    @apply text-lg font-normal;
+}
+.address-icons >li{
+    @apply m-3 text-lg lg:text-lg;
+}
+.address-icons >li>i{
+   @apply text-cyan-700 text-base p-3;
+
+}
+
+#tech-list > i{
+    @apply text-cyan-300 text-base p-3 text-4xl;
+}
+h4{
+    @apply text-cyan-300 text-base p-3 text-4xl;
+}
+/*FOOTER*/
+
+.footer-content {
+    @apply flex flex-col items-center text-center text-white py-8 px-4;
+}
+
+.social-icons, .footer-section, .rights {
+    @apply flex flex-col md:flex-row items-center justify-center gap-4 mb-4;
+}
+
+.social-icons > a, .footer-section > a {
+    @apply m-2 p-2 text-cyan-700 hover:text-cyan-500;
+}
+
+.social-icons > a > i, .footer-section > a > i {
+    @apply text-cyan-700 text-base mr-2;
+}
+
+.rights p {
+    @apply text-center text-sm mt-1;
+}

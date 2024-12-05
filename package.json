@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "daisyui": "^4.12.14",
+    "tailwindcss": "^3.4.14"
+  },
+  "dependencies": {
+    "@material-tailwind/html": "^2.3.2",
+    "@material-tailwind/react": "^2.1.10",
+    "preline": "^2.5.1"
+  }
+}
